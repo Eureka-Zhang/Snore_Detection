@@ -43,6 +43,10 @@ pip install numpy librosa torch matplotlib
 pip install soundfile
 ```
 
+```bash 
+pip install pydub
+```
+
 ---
 
 ## 🎧 1️⃣ 预处理脚本：`preprocess_snore.py`

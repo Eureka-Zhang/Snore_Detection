@@ -67,7 +67,7 @@ def visualize_waveform_and_cqt(npy_path, audio_path=None, save_dir=None,
 if __name__ == "__main__":
     # 默认参数
     feature_dir = "features/"
-    audio_dir = "data/"
+    audio_dir = "audio_wav/"
     save_dir = "spectrograms/"
 
     # 自动选取第一个文件
@@ -77,6 +77,7 @@ if __name__ == "__main__":
     else:
         fname = npy_files[0]
         npy_path = os.path.join(feature_dir, fname)
-        audio_path = os.path.join(audio_dir, fname.replace(".npy", ".wav"))
+        audio_path = os.path.join(audio_dir, "306221020-015425-4.wav")
+        print(audio_path)
 
         visualize_waveform_and_cqt(npy_path, audio_path, save_dir=save_dir)
